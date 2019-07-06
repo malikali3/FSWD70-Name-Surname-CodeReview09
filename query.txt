@@ -1,0 +1,13 @@
+which car is damaged?
+
+SELECT car.manufacturer, car.model
+FROM damages_if_yes
+INNER JOIN car on CAR.PK_CAR_NUM = damages_if_yes.pk_car_num 
+
+
+
+which car is not damaged?
+
+SELECT car.manufacturer, car.model
+FROM damages_if_no
+INNER JOIN car on CAR.PK_CAR_NUM = damages_if_no.pk_car_num 
